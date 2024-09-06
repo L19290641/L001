@@ -26,6 +26,12 @@ class ContadorDePalabras
         puts "#{palabra.capitalize}: #{cantidad}" if cantidad > 1
       end
     end
+
+  # Método to_s para mostrar el nombre del objeto
+  def to_s
+    "Objeto de la clase contadorDeFrecuencia"
+  end
+
   end
   
   # Frase inicial
@@ -44,5 +50,7 @@ class ContadorDePalabras
   
   # Método para contar palabras repetidas en la nueva frase
   puts "\nPalabras repetidas en la nueva frase:"
+
   contador.contar_palabras_repetidas
   
+  puts contador
